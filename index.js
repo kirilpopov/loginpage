@@ -23,7 +23,7 @@ const login = async (targetUrl) => {
 /**
  * Retrieves the auth configuration from the server
  */
-const fetchAuthConfig = () => fetch("/auth_config.json");
+const fetchAuthConfig = () => fetch("auth_config.json");
 
 /**
  * Initializes the Auth0 client

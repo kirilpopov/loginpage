@@ -6,7 +6,7 @@ const login = async (targetUrl) => {
         console.log("Logging in", targetUrl);
 
         const options = {
-            redirect_uri: window.location.origin
+       //     redirect_uri: window.location.href
         };
 
         if (targetUrl) {
@@ -34,8 +34,7 @@ const configureClient = async () => {
 
     auth0 = await createAuth0Client({
         domain: config.domain,
-        client_id: config.clientId,
-		redirect_uri: "https://kirilpopov.github.io/loginpage/"
+        client_id: config.clientId		
     });
 };
 

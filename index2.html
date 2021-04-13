@@ -1,13 +1,18 @@
 <!DOCTYPE html>
-<html class="h-100">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Glue42 login</title>
+<html>
+<script>
+    if (window.Glue) {
+        Glue({})
+            .then((glue) => {
+                console.log("glue ready");
+                window.glue = glue;
+            })
+            .catch(console.error)
+    }
+</script>
 
-  </head>
+<body>
+    <h2>Glue42 Iframe</h2>
+</body>
 
-  <body class="h-100">
- 
-    <iframe src="https://glue42.com/" width="600"></iframe>
-  </body>
 </html>
